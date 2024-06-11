@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+
+    <body>
+        <form method="post" action="{%  'fetch_jokes' %}">
+
+            {% csrf_token %}
+
+            Count: <input type="number" name="count"><br>
+            
+            <button type="submit"> SUBMIT</button>
+        </form>
+
+    </body>
+</html>

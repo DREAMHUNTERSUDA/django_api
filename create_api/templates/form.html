@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+
+    <body>
+        <form method="post" action="{% url 'process_form' %}">
+
+            {% csrf_token %}
+
+            name: <input type="text" name="name"><br>
+            age: <input type="age" name="age"> <br>
+            salary: <input type="salary" name="salary"> <br>
+            <button type="submit"> SUBMIT</button>
+        </form>
+
+    </body>
+</html>
